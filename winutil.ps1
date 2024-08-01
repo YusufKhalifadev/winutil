@@ -8,7 +8,7 @@
     Author         : Chris Titus @christitustech
     Runspace Author: @DeveloperDurp
     GitHub         : https://github.com/ChrisTitusTech
-    Version        : 24.07.31
+    Version        : 24.08.01
 #>
 param (
     [switch]$Debug,
@@ -45,7 +45,7 @@ Add-Type -AssemblyName System.Windows.Forms
 # Variable to sync between runspaces
 $sync = [Hashtable]::Synchronized(@{})
 $sync.PSScriptRoot = $PSScriptRoot
-$sync.version = "24.07.31"
+$sync.version = "24.08.01"
 $sync.configs = @{}
 $sync.ProcessRunning = $false
 
@@ -11759,7 +11759,7 @@ $sync.configs.tweaks = '{
     "InvokeScript": [
       "
         #:: Standalone script by AveYo Source: https://raw.githubusercontent.com/AveYo/fox/main/Edge_Removal.bat
-        Invoke-WebRequest -Uri \"https://raw.githubusercontent.com/ChrisTitusTech/winutil/main/edgeremoval.bat\" -OutFile \"$ENV:TEMP\\edgeremoval.bat\"
+        Invoke-WebRequest -Uri \"https://raw.githubusercontent.com/YusufKhalifaDev/winutil/edge-script-test/edgeremoval.bat\" -OutFile \"$ENV:TEMP\\edgeremoval.bat\"
         Start-Process $ENV:temp\\edgeremoval.bat
         "
     ],
