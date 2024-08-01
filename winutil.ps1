@@ -11759,7 +11759,7 @@ $sync.configs.tweaks = '{
     "InvokeScript": [
       "
         #:: Standalone script by AveYo Source: https://raw.githubusercontent.com/AveYo/fox/main/Edge_Removal.bat
-        Invoke-WebRequest -Uri \"https://raw.githubusercontent.com/YusufKhalifaDev/winutil/edge-script-test/edgeremoval.bat\" -OutFile \"$ENV:TEMP\\edgeremoval.bat\"
+        Invoke-WebRequest -Uri \"https://raw.githubusercontent.com/YusufKhalifaDev/winutil/edge-script-test/edgeremoval.ps1\" -OutFile \"$ENV:TEMP\\edgeremoval.bat\"
         Start-Process $ENV:temp\\edgeremoval.bat
         "
     ],
